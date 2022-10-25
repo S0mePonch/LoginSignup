@@ -14,10 +14,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnEnter, btnRegistrar;
     UsuarioDao dao;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         user = (EditText)findViewById(R.id.User);
         password = (EditText)findViewById(R.id.password);
         btnEnter = (Button) findViewById(R.id.buttonLogin);
